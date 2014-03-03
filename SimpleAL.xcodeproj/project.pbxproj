@@ -399,6 +399,7 @@
 				GCC_PREFIX_HEADER = "Other Sources/SimpleAL-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = SimpleAL;
+				PUBLIC_HEADERS_FOLDER_PATH = ../../Headers/SimpleAL;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -416,6 +417,7 @@
 				GCC_PREFIX_HEADER = "Other Sources/SimpleAL-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = SimpleAL;
+				PUBLIC_HEADERS_FOLDER_PATH = ../../Headers/SimpleAL;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

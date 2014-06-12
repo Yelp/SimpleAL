@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name         = 'SimpleAL'
   s.version      = '1.0.0'
-  s.summary      = 'Yelp iOS collection and table view utilities'
-  s.homepage     = 'https://gitweb.yelpcorp.com/?p=SimpleAL.git'
+  s.summary      = 'Yelp iOS autolayout utilities forked from alexhaefner/SimpleAL'
+  s.homepage     = 'https://github.com/Yelp/SimpleAL'
   s.authors      = { 'Yelp iOS Team' => 'iphone@yelp.com' }
-  s.source       = { :git => 'git@git.yelpcorp.com:SimpleAL.git', :tag => 'v1.0.0' }
+  s.source       = { :git => 'git://github.com/Yelp/SimpleAL.git', :tag => 'v1.0.0' }
   s.requires_arc = true
 
   s.platform     = :ios

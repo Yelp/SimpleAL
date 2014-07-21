@@ -4,8 +4,9 @@ Pod::Spec.new do |s|
   s.summary      = 'Yelp iOS autolayout utilities forked from alexhaefner/SimpleAL'
   s.homepage     = 'https://github.com/Yelp/SimpleAL'
   s.authors      = { 'Yelp iOS Team' => 'iphone@yelp.com' }
-  s.source       = { :git => 'git://github.com/Yelp/SimpleAL.git', :tag => 'v1.0.0' }
+  s.source       = { :git => 'https://github.com/Yelp/SimpleAL.git', :tag => 'v1.0.0' }
   s.requires_arc = true
+  s.license      = 'Apache 2.0'
 
   s.platform     = :ios
   s.ios.deployment_target = '6.0'

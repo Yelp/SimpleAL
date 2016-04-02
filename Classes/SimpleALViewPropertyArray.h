@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 Alex Haefner. All rights reserved.
 //
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class SimpleALViewProperty;
 
 /*!
@@ -23,7 +25,7 @@
  @param viewProperty2 The SimpleALViewProperty property for the right hand side of the above equation
  @return An NSArray of NSLayoutConstraint objects representing the equality expression
  */
-- (NSArray /*of NSLayoutConstraint*/ *)equalToViewProperty:(SimpleALViewProperty *)viewProperty2;
+- (NSArray<NSLayoutConstraint *> *)equalToViewProperty:(SimpleALViewProperty *)viewProperty2;
 
 /*!
  An NSLayoutConstraint of the equation: self.attribute = viewProperty2.attribute * 1.0 + constant
@@ -31,7 +33,7 @@
  @param constant The constant value in the above equation
  @return An NSArray of NSLayoutConstraint objects representing the equality expression
  */
-- (NSArray /*of NSLayoutConstraint*/ *)equalToViewProperty:(SimpleALViewProperty *)viewProperty2 constant:(CGFloat)constant;
+- (NSArray<NSLayoutConstraint *> *)equalToViewProperty:(SimpleALViewProperty *)viewProperty2 constant:(CGFloat)constant;
 
 /*!
  An NSLayoutConstraint of the equation: self.attribute = viewProperty2.attribute * multiplier + constant
@@ -40,14 +42,14 @@
  @param constant The constant value in the above equation
  @return An NSArray of NSLayoutConstraint objects representing the equality expression
  */
-- (NSArray /*of NSLayoutConstraint*/ *)equalToViewProperty:(SimpleALViewProperty *)viewProperty2 multiplier:(CGFloat)multiplier constant:(CGFloat)constant;
+- (NSArray<NSLayoutConstraint *> *)equalToViewProperty:(SimpleALViewProperty *)viewProperty2 multiplier:(CGFloat)multiplier constant:(CGFloat)constant;
 
 /*!
  An NSLayoutConstraint of the equation: self.attribute <= viewProperty2.attribute * 1.0 + 0.0
  @param viewProperty2 The SimpleALViewProperty property for the right hand side of the above equation
  @return An NSArray of NSLayoutConstraint objects representing the equality expression
  */
-- (NSArray /*of NSLayoutConstraint*/ *)lessThanOrEqualToViewProperty:(SimpleALViewProperty *)viewProperty2;
+- (NSArray<NSLayoutConstraint *> *)lessThanOrEqualToViewProperty:(SimpleALViewProperty *)viewProperty2;
 
 /*!
  An NSLayoutConstraint of the equation: self.attribute <= viewProperty2.attribute * 1.0 + constant
@@ -55,7 +57,7 @@
  @param constant The constant value in the above equation
  @return An NSArray of NSLayoutConstraint objects representing the equality expression
  */
-- (NSArray /*of NSLayoutConstraint*/ *)lessThanOrEqualToViewProperty:(SimpleALViewProperty *)viewProperty2 constant:(CGFloat)constant;
+- (NSArray<NSLayoutConstraint *> *)lessThanOrEqualToViewProperty:(SimpleALViewProperty *)viewProperty2 constant:(CGFloat)constant;
 
 /*!
  An NSLayoutConstraint of the equation: self.attribute <= viewProperty2.attribute * multiplier + constant
@@ -64,14 +66,14 @@
  @param constant The constant value in the above equation
  @return An NSArray of NSLayoutConstraint objects representing the equality expression
  */
-- (NSArray /*of NSLayoutConstraint*/ *)lessThanOrEqualToViewProperty:(SimpleALViewProperty *)viewProperty2 multiplier:(CGFloat)multiplier constant:(CGFloat)constant;
+- (NSArray<NSLayoutConstraint *> *)lessThanOrEqualToViewProperty:(SimpleALViewProperty *)viewProperty2 multiplier:(CGFloat)multiplier constant:(CGFloat)constant;
 
 /*!
  An NSLayoutConstraint of the equation: self.attribute >= viewProperty2.attribute * 1.0 + 0.0
  @param viewProperty2 The SimpleALViewProperty property for the right hand side of the above equation
  @return An NSArray of NSLayoutConstraint objects representing the equality expression
  */
-- (NSArray /*of NSLayoutConstraint*/ *)greaterThanOrEqualToViewProperty:(SimpleALViewProperty *)viewProperty2;
+- (NSArray<NSLayoutConstraint *> *)greaterThanOrEqualToViewProperty:(SimpleALViewProperty *)viewProperty2;
 
 /*!
  An NSLayoutConstraint of the equation: self.attribute >= viewProperty2.attribute * 1.0 + constant
@@ -79,7 +81,7 @@
  @param constant The constant value in the above equation
  @return An NSArray of NSLayoutConstraint objects representing the equality expression
  */
-- (NSArray /*of NSLayoutConstraint*/ *)greaterThanOrEqualToViewProperty:(SimpleALViewProperty *)viewProperty2 constant:(CGFloat)constant;
+- (NSArray<NSLayoutConstraint *> *)greaterThanOrEqualToViewProperty:(SimpleALViewProperty *)viewProperty2 constant:(CGFloat)constant;
 
 /*!
  An NSLayoutConstraint of the equation: self.attribute >= viewProperty2.attribute * multiplier + constant
@@ -88,26 +90,28 @@
  @param constant The constant value in the above equation
  @return An NSArray of NSLayoutConstraint objects representing the equality expression
  */
-- (NSArray /*of NSLayoutConstraint*/ *)greaterThanOrEqualToViewProperty:(SimpleALViewProperty *)viewProperty2 multiplier:(CGFloat)multiplier constant:(CGFloat)constant;
+- (NSArray<NSLayoutConstraint *> *)greaterThanOrEqualToViewProperty:(SimpleALViewProperty *)viewProperty2 multiplier:(CGFloat)multiplier constant:(CGFloat)constant;
 
 /*!
  An NSLayoutConstraint of the equation: self.attribute = value
  @param value The constant value in the above equation
  @return An NSArray of NSLayoutConstraint objects representing the equality expression
  */
-- (NSArray /*of NSLayoutConstraint*/ *)equalToValue:(CGFloat)value;
+- (NSArray<NSLayoutConstraint *> *)equalToValue:(CGFloat)value;
 
 /*!
  An NSLayoutConstraint of the equation: self.attribute <= value
  @param value The constant value in the above equation
  @return An NSArray of NSLayoutConstraint objects representing the equality expression
  */
-- (NSArray /*of NSLayoutConstraint*/ *)lessThanOrEqualToValue:(CGFloat)value;
+- (NSArray<NSLayoutConstraint *> *)lessThanOrEqualToValue:(CGFloat)value;
 
 /*!
  An NSLayoutConstraint of the equation: self.attribute >= value
  @param value The constant value in the above equation
  @return An NSArray of NSLayoutConstraint objects representing the equality expression
  */
-- (NSArray /*of NSLayoutConstraint*/ *)greaterThanOrEqualToValue:(CGFloat)value;
+- (NSArray<NSLayoutConstraint *> *)greaterThanOrEqualToValue:(CGFloat)value;
 @end
+
+NS_ASSUME_NONNULL_END

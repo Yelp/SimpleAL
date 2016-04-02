@@ -46,11 +46,11 @@
 /* Begin PBXFileReference section */
 		A8E127A618A1A8F800C2D48F /* NSArray+SimpleAL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SimpleAL.h"; sourceTree = "<group>"; };
 		A8E127A718A1A8F800C2D48F /* NSArray+SimpleAL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SimpleAL.m"; sourceTree = "<group>"; };
-		A8E127A818A1A8F800C2D48F /* NSLayoutConstraint+SimpleAL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSLayoutConstraint+SimpleAL.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		A8E127A918A1A8F800C2D48F /* NSLayoutConstraint+SimpleAL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSLayoutConstraint+SimpleAL.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		A8E127A818A1A8F800C2D48F /* NSLayoutConstraint+SimpleAL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSLayoutConstraint+SimpleAL.h"; sourceTree = "<group>"; };
+		A8E127A918A1A8F800C2D48F /* NSLayoutConstraint+SimpleAL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSLayoutConstraint+SimpleAL.m"; sourceTree = "<group>"; };
 		A8E127AB18A1A8F800C2D48F /* SimpleAL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAL.h; sourceTree = "<group>"; };
-		A8E127AC18A1A8F800C2D48F /* SimpleALViewProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SimpleALViewProperty.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		A8E127AD18A1A8F800C2D48F /* SimpleALViewProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SimpleALViewProperty.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		A8E127AC18A1A8F800C2D48F /* SimpleALViewProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SimpleALViewProperty.h; sourceTree = "<group>"; };
+		A8E127AD18A1A8F800C2D48F /* SimpleALViewProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SimpleALViewProperty.m; sourceTree = "<group>"; };
 		A8E127AE18A1A8F800C2D48F /* SimpleALViewPropertyArrayPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleALViewPropertyArrayPrivate.h; sourceTree = "<group>"; };
 		A8E127AF18A1A8F800C2D48F /* SimpleALViewPropertyArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleALViewPropertyArray.h; sourceTree = "<group>"; };
 		A8E127B018A1A8F800C2D48F /* SimpleALViewPropertyArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleALViewPropertyArray.m; sourceTree = "<group>"; };
@@ -227,7 +227,7 @@
 			name = SimpleALTests;
 			productName = AHALTests;
 			productReference = B22AAC441828B02B00772FDD /* SimpleALTests.xctest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -235,6 +235,7 @@
 		B22AAC2B1828B02B00772FDD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastTestingUpgradeCheck = 0730;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Alex Haefner";
 			};

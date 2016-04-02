@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 Alex Haefner. All rights reserved.
 //
 
+NS_ASSUME_NONNULL_BEGIN
+
 /*!
  SimpleALViewProperty is an object that represents a UIView and an NSAutolayoutAttribute.
  
@@ -109,3 +111,5 @@
  */
 - (NSLayoutConstraint *)greaterThanOrEqualToValue:(CGFloat)value;
 @end
+
+NS_ASSUME_NONNULL_END

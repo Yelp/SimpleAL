@@ -8,6 +8,8 @@
 
 @class SimpleALViewPropertyArray;
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface NSArray (SimpleAL)
 
 /*!
@@ -76,3 +78,5 @@ The SimpleAL NSArray property for the height of an array of views
  */
 - (SimpleALViewPropertyArray *)al_trailing;
 @end
+
+NS_ASSUME_NONNULL_END

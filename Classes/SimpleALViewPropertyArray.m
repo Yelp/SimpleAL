@@ -13,15 +13,15 @@
 
 @implementation SimpleALViewPropertyArray
 
-- (NSArray /*of NSLayoutConstraint*/ *)equalToViewProperty:(SimpleALViewProperty *)viewProperty2 {
+- (NSArray<NSLayoutConstraint *> *)equalToViewProperty:(SimpleALViewProperty *)viewProperty2 {
   return [self equalToViewProperty:viewProperty2 multiplier:1.0 constant:0.0];
 }
 
-- (NSArray /*of NSLayoutConstraint*/ *)equalToViewProperty:(SimpleALViewProperty *)viewProperty2 constant:(CGFloat)constant {
+- (NSArray<NSLayoutConstraint *> *)equalToViewProperty:(SimpleALViewProperty *)viewProperty2 constant:(CGFloat)constant {
   return [self equalToViewProperty:viewProperty2 multiplier:1.0 constant:constant];
 }
 
-- (NSArray /*of NSLayoutConstraint*/ *)equalToViewProperty:(SimpleALViewProperty *)viewProperty2 multiplier:(CGFloat)multiplier constant:(CGFloat)constant {
+- (NSArray<NSLayoutConstraint *> *)equalToViewProperty:(SimpleALViewProperty *)viewProperty2 multiplier:(CGFloat)multiplier constant:(CGFloat)constant {
   NSMutableArray *array = [NSMutableArray array];
   for (SimpleALViewProperty *viewProperty in self.simpleAlViewProperties) {
     [array addObject:[viewProperty equalToViewProperty:viewProperty2 multiplier:multiplier constant:constant]];
@@ -29,15 +29,15 @@
   return array;
 }
 
-- (NSArray /*of NSLayoutConstraint*/ *)lessThanOrEqualToViewProperty:(SimpleALViewProperty *)viewProperty2 {
+- (NSArray<NSLayoutConstraint *> *)lessThanOrEqualToViewProperty:(SimpleALViewProperty *)viewProperty2 {
   return [self lessThanOrEqualToViewProperty:viewProperty2 multiplier:1.0 constant:0.0];
 }
 
-- (NSArray /*of NSLayoutConstraint*/ *)lessThanOrEqualToViewProperty:(SimpleALViewProperty *)viewProperty2 constant:(CGFloat)constant {
+- (NSArray<NSLayoutConstraint *> *)lessThanOrEqualToViewProperty:(SimpleALViewProperty *)viewProperty2 constant:(CGFloat)constant {
   return [self lessThanOrEqualToViewProperty:viewProperty2 multiplier:1.0 constant:constant];
 }
 
-- (NSArray /*of NSLayoutConstraint*/ *)lessThanOrEqualToViewProperty:(SimpleALViewProperty *)viewProperty2 multiplier:(CGFloat)multiplier constant:(CGFloat)constant {
+- (NSArray<NSLayoutConstraint *> *)lessThanOrEqualToViewProperty:(SimpleALViewProperty *)viewProperty2 multiplier:(CGFloat)multiplier constant:(CGFloat)constant {
   NSMutableArray *array = [NSMutableArray array];
   for (SimpleALViewProperty *viewProperty in self.simpleAlViewProperties) {
     [array addObject:[viewProperty lessThanOrEqualToViewProperty:viewProperty2 multiplier:multiplier constant:constant]];
@@ -45,15 +45,15 @@
   return array;
 }
 
-- (NSArray /*of NSLayoutConstraint*/ *)greaterThanOrEqualToViewProperty:(SimpleALViewProperty *)viewProperty2 {
+- (NSArray<NSLayoutConstraint *> *)greaterThanOrEqualToViewProperty:(SimpleALViewProperty *)viewProperty2 {
   return [self greaterThanOrEqualToViewProperty:viewProperty2 multiplier:1.0 constant:0.0];
 }
 
-- (NSArray /*of NSLayoutConstraint*/ *)greaterThanOrEqualToViewProperty:(SimpleALViewProperty *)viewProperty2 constant:(CGFloat)constant {
+- (NSArray<NSLayoutConstraint *> *)greaterThanOrEqualToViewProperty:(SimpleALViewProperty *)viewProperty2 constant:(CGFloat)constant {
   return [self greaterThanOrEqualToViewProperty:viewProperty2 multiplier:1.0 constant:constant];
 }
 
-- (NSArray /*of NSLayoutConstraint*/ *)greaterThanOrEqualToViewProperty:(SimpleALViewProperty *)viewProperty2 multiplier:(CGFloat)multiplier constant:(CGFloat)constant {
+- (NSArray<NSLayoutConstraint *> *)greaterThanOrEqualToViewProperty:(SimpleALViewProperty *)viewProperty2 multiplier:(CGFloat)multiplier constant:(CGFloat)constant {
   NSMutableArray *array = [NSMutableArray array];
   for (SimpleALViewProperty *viewProperty in self.simpleAlViewProperties) {
     [array addObject:[viewProperty greaterThanOrEqualToViewProperty:viewProperty2 multiplier:multiplier constant:constant]];
@@ -61,7 +61,7 @@
   return array;
 }
 
-- (NSArray /*of NSLayoutConstraint*/ *)equalToValue:(CGFloat)value {
+- (NSArray<NSLayoutConstraint *> *)equalToValue:(CGFloat)value {
   NSMutableArray *array = [NSMutableArray array];
   for (SimpleALViewProperty *viewProperty in self.simpleAlViewProperties) {
     [array addObject:[viewProperty equalToValue:value]];
@@ -69,7 +69,7 @@
   return array;
 }
 
-- (NSArray /*of NSLayoutConstraint*/ *)lessThanOrEqualToValue:(CGFloat)value {
+- (NSArray<NSLayoutConstraint *> *)lessThanOrEqualToValue:(CGFloat)value {
   NSMutableArray *array = [NSMutableArray array];
   for (SimpleALViewProperty *viewProperty in self.simpleAlViewProperties) {
     [array addObject:[viewProperty lessThanOrEqualToValue:value]];
@@ -77,7 +77,7 @@
   return array;
 }
 
-- (NSArray /*of NSLayoutConstraint*/ *)greaterThanOrEqualToValue:(CGFloat)value {
+- (NSArray<NSLayoutConstraint *> *)greaterThanOrEqualToValue:(CGFloat)value {
   NSMutableArray *array = [NSMutableArray array];
   for (SimpleALViewProperty *viewProperty in self.simpleAlViewProperties) {
     [array addObject:[viewProperty greaterThanOrEqualToValue:value]];

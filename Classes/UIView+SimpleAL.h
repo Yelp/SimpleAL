@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 Alex Haefner. All rights reserved.
 //
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class SimpleALViewProperty;
 
 @interface UIView (SimpleAL)
@@ -66,3 +68,5 @@
 @property (readonly, nonatomic) SimpleALViewProperty *al_width;
 
 @end
+
+NS_ASSUME_NONNULL_END

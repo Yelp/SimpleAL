@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 Alex Haefner. All rights reserved.
 //
 
+@import Foundation;
+
 @class SimpleALViewPropertyArray;
 
 NS_ASSUME_NONNULL_BEGIN

@@ -8,6 +8,8 @@
 
 #import "SimpleALViewProperty.h"
 
+@import UIKit.UIView;
+
 @interface SimpleALViewProperty ()
 @property (nonatomic, strong) UIView *view;
 @property (nonatomic, assign) NSLayoutAttribute attribute;

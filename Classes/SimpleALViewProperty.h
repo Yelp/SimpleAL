@@ -36,7 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 /*!
  An NSLayoutConstraint of the equation: self.attribute = viewProperty2.attribute * multiplier + constant
  @param viewProperty2 The SimpleALViewProperty represented in the above formula
- @param multipler The multiplier in the above equation
+ @param multiplier The multiplier in the above equation
  @param constant The constant in the above equation
  @return An NSLayoutConstraint representing the equality expression
  */
@@ -60,7 +60,7 @@ NS_ASSUME_NONNULL_BEGIN
 /*!
  An NSLayoutConstraint of the equation: self.attribute <= viewProperty2.attribute * multiplier + constant
  @param viewProperty2 The SimpleALViewProperty represented in the above formula
- @param multipler The multiplier in the above equation
+ @param multiplier The multiplier in the above equation
  @param constant The constant in the above equation
  @return An NSLayoutConstraint representing the equality expression
  */
@@ -84,7 +84,7 @@ NS_ASSUME_NONNULL_BEGIN
 /*!
  An NSLayoutConstraint of the equation: self.attribute >= viewProperty2.attribute * multiplier + constant
  @param viewProperty2 The SimpleALViewProperty represented in the above formula
- @param multipler The multiplier in the above equation
+ @param multiplier The multiplier in the above equation
  @param constant The constant in the above equation
  @return An NSLayoutConstraint representing the equality expression
  */

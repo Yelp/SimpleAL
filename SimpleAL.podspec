@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'SimpleAL'
-  s.version      = '1.0.2'
+  s.version      = '1.0.3'
   s.summary      = 'Yelp iOS autolayout utilities forked from alexhaefner/SimpleAL'
   s.homepage     = 'https://github.com/Yelp/SimpleAL'
   s.authors      = { 'Yelp iOS Team' => 'iphone@yelp.com' }
